@@ -1,0 +1,24 @@
+import java.util.Scanner;
+ 
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        int minkook = 0, manse = 0;
+        
+        for (int i = 0; i < 4; i++) {
+            minkook += sc.nextInt();
+        }
+        
+        for (int i = 0; i < 4; i++) {
+            manse += sc.nextInt();
+        }
+        
+        sc.close();
+        
+        if (minkook == manse) System.out.println(minkook);
+        else System.out.println(minkook > manse ? minkook : manse);
+    }
+}
+
+
